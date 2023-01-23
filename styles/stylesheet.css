@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+}
+.logo{
+    margin: auto;
+    margin-bottom: 4px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: red;
+}
+.logo img{
+    width: 140px;
+    height: 140px;
+}
+.nav-bar li{
+ background-color: rgb(158, 121, 121);
+ box-shadow: 2px 3px 5px rgb(224, 197, 160);
+ width: 120px;
+ margin: 12px 2px;
+ padding: 9px 2px;
+ text-align: center;
+}
+.nav-bar li A{
+    text-decoration: none;
+    color: #fff;
+}
+.small-container img:hover{
+    transform: scale(1.089);
+    margin: 6px 2px;
+    transition: 0.5s;
+}
+.nav-bar li:hover{
+  background: #64a256;
+  border-radius: 3px;
+}
+.menu-bar .fa{
+    margin-right: 8px;
+}
+.sub-menu-1{
+    display: none; 
+}
+.nav-bar li:hover .sub-menu-1{
+  z-index: 1;
+  display: block;
+  position: absolute;
+  background: rgb(228, 164, 172);
+  margin:3px 12px;
+}
+.nav-bar li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    border-bottom: 2px dotted whitesmoke;
+    text-align: left;
+    padding-left: 12px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: #555;
+    
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: aqua;
+}
+.fa-angle-right{
+    float: right ;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.small-container{
+    /* background-color: red; */
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.col-4 img{
+    width:100%;
+    border-radius: 12px;
+}
+#title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+    text-shadow:2px 2px #64a256;
+}
+#title::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer {
+    margin-top: 250px;
+    padding: 20px 15px;
+    background: #333 ;
+    color:#efefef;
+    display: flex;
+    width: max-content;
+    
+
+}
+@media only screen and (min-width:700px){
+    .footer{
+        width: 1280px;
+    }
+    .nav-bar li{
+        width: 190px;
+    }
+}
+.footer div {
+    justify-content: space-around;
+    text-align: center;
+}
+.news-letter {
+    flex-grow: 2;
+}
+.footer div h3 {
+   font-weight: 300;
+   margin-bottom: 30px;
+}
+.useful-links{
+    margin: 16px 24px;
+}
+.useful-links a{
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom:10px;
+    background-color: rgb(175, 158, 214);
+    padding: 4px;
+}
+.useful-links a:hover{
+    background-color:rgb(238, 193, 130) ;
+}
+form input {
+    width: 300px;
+    height: 45px;
+    border-radius: 4px;
+    /* text-align: center; */
+    margin-top:20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: inset;
+}
+form button {
+    background:transparent ;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.social-media {
+    margin-top: 30px;
+}
+.social-media i {
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+}
+.social-media i:hover{
+    transform: scale(1.198);
+}
+
+.footer-contact{
+    margin: 14px;
+}
+.nav-bar{
+    background-color: rgb(189, 156, 156);
+    justify-content: space-around;
+    list-style: none;
+    display: flex;
+}
+.footer-contact p span{
+    display: block;
+    background-color: #64a256;
+    margin: 8px;
+    padding: 6px;
+}
+.footer-contact p span:hover{
+    background-color: aquamarine;
+    color: black;
+}
+.btn:hover{
+    background-color: rgb(200, 152, 152);
+    color: black;
+    transform: scale(1.123);
+}

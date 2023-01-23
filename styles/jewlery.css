@@ -1,0 +1,74 @@
+body {
+    background-color: rgb(150, 148, 148);
+    /* background-image: url('../img/marketplace.jfif'); */
+    background-size: cover;
+  }
+  a{
+      text-decoration: none;
+  }
+  .back{
+      display: inline-block;
+      padding: 6px;
+      text-align: center;
+      margin-left: auto;
+      background-color: aquamarine;
+  }
+  .back-btn{
+      text-align: center;
+  }
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  img:hover{
+    transform: scale(1.0389);
+  }
+  .input{
+      background-color: bisque;
+      padding: 6px;
+      /* justify-content: center; */
+      text-align: center;
+  }
+  .input-field{
+      width: 80%;
+      padding: 8px;
+  }
+  .furniture {
+    width: 230px;
+    height: 380px;
+    background-color: rgb(177, 153, 153);
+    margin: 8px auto;
+    padding: 8px;
+    text-align: center;
+    border-radius: 12px;
+  }
+  .prev-next{
+      justify-content: space-between;
+      display: flex;
+      margin: 24px;
+  }
+  .wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      grid-template-columns:repeat(4,1fr);
+  }
+  .shop-now{
+    background-color: rgb(95, 39, 48);
+    color: bisque;
+    width: max-content;
+    padding: 5px;
+    margin: auto;
+    border-radius: 4px;
+    margin-top: -4px;
+  }
+  .shop-now:hover{
+    background-color:rgb(158, 92, 103) ;
+  }
+  .price{
+    background-color: rgb(26, 140, 140);
+    color: whitesmoke;
+    width: max-content;
+    padding: 6px;
+    border-radius: 7px;
+  }

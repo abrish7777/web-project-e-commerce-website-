@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  align-content: center;
+}
+
+body {
+  color: aliceblue;
+  background: rgb(6, 6, 30);
+}
+/* logo ,ads, topic and navigation */
+header {
+  position: relative;
+  width: 100%;
+  height: 150px;
+}
+/* navigation nemu */
+
+.nav {
+  position: absolute;
+  bottom: 0;
+  left: 23%;
+  margin: 25px 0 0 25px;
+  padding: 5px;
+
+  border: 1px solid rebeccapurple;
+}
+
+.nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 5px;
+}
+
+.nav ul li a {
+  color: aliceblue;
+  border: 1px solid aliceblue;
+  border-radius: 24px;
+  text-decoration: none;
+  padding: 5px;
+}
+
+/* section parts */
+
+.section {
+  display: block;
+  position: relative;
+  margin: 20px;
+  border: 1px solid rebeccapurple;
+}
+
+/* about */
+.about {
+  position: inherit;
+  width: 1050px;
+  height: 100px;
+  display: block;
+}
+
+/* .popular */
+
+.pupularItemsArea {
+  width: 1050px;
+  height: 1200px;
+  padding: 10px;
+}
+
+.popular_items {
+  display: inline-block;
+  width: 420px;
+  height: 43%;
+  margin: 6px;
+  padding: 7px;
+  height: fit-content;
+}
+
+.item_image img {
+  width: 100%;
+}
+
+/* item description */
+
+.item_description {
+  margin: 7px;
+  padding: 4px;
+  text-align: center;
+}
+
+.item_description p,
+.attributes {
+  display: inline;
+}
+
+/* buttons */
+
+.item_buttons {
+  display: flex;
+  justify-content: space-around;
+  padding: 6px;
+}
+
+.item_buttons a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  margin: 5px;
+  padding: 4px 8px;
+  border: 1px solid antiquewhite;
+  border-radius: 23px;
+  background: transparent;
+  color: aliceblue;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn .icons {
+  width: 20px;
+  height: 20px;
+  display: none;
+}
+
+.sample {
+  font-weight: 600;
+  position: absolute;
+  bottom: 0;
+  text-decoration: none;
+}
+
+.sample:hover {
+  background-color: aliceblue;
+  border: none;
+  color: rgb(6, 6, 30);
+}
+
+/* asides */
+
+.aside {
+  position: absolute;
+  right: 0;
+  top: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 370px;
+  height: 1800px;
+
+  border: 1px solid rebeccapurple;
+}
+
+.aside_items {
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 22px;
+  height: 33%;
+  border: 1px solid rebeccapurple;
+}
+
+.aside_items h2 {
+  margin-bottom: 34px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.aside_items a {
+  text-decoration: none;
+  color: antiquewhite;
+  border: 1px solid aliceblue;
+  width: fit-content;
+  padding: 8px;
+  border-radius: 18px;
+  background: linear-gradient(to left top, rgb(39, 31, 1), white);
+  transition: all 2s;
+}
+
+.aside_items a:hover {
+  border-radius: 0px;
+  background: linear-gradient(to left top, white, rgb(39, 31, 1));
+}
+
+.image_slide {
+  display: flex;
+  justify-content: space-between;
+}
+.image_slide img {
+  display: absolute;
+  width: 60px;
+  height: 100px;
+}
+
+.searchArea,
+.askArea,
+.helpArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 1050px;
+  height: 200px;
+  padding: 54px;
+}
+
+.search_box {
+  position: relative;
+}
+
+.search_box input {
+  background: transparent;
+  color: aliceblue;
+  text-align: center;
+  border: 1px solid aliceblue;
+  border-radius: 12px;
+  height: 28px;
+  width: 150px;
+  transition: all 2s;
+}
+
+.search_box input:focus {
+  min-width: 170px;
+  border-radius: 0;
+}
+
+.search_btn {
+  margin-left: 13px;
+  transform: translateY(5px);
+  background-color: transparent;
+  border: none;
+}
+
+.search_box img {
+  cursor: pointer;
+  width: 23px;
+}
+
+.ask_link {
+  position: relative;
+}
+
+.ask_link {
+  text-align: center;
+  text-decoration: none;
+  color: aliceblue;
+  padding: 9px;
+  background: rgb(118, 122, 124);
+  border-radius: 15px;
+  width: 160px;
+}
+
+.ask_link:hover {
+  background: rgb(69, 69, 69);
+}
+
+footer {
+  height: 400px;
+  background: rgba(19, 20, 45, 0.842);
+}
